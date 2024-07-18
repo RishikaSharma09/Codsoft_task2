@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+</head>
+<style>
+
+body {
+    color:white;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+}
+
+.header img {
+    height: 220px;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: flex-start;
+}
+
+.header-navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 80px;
+}
+
+.header-navbar ul li {
+    margin-left: 20px;
+    color: black;
+    font-family: Arial Narrow Bold;
+}
+
+.header-navbar li:hover {
+    color: rgb(3, 131, 95);
+    text-decoration: underline;
+}
+
+.header-navbar a:visited{
+    color:black;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 650px;
+    width: 1340px;
+    border: 1px solid black;
+    margin-left: 40px;
+}
+
+.left-section {
+    height: 650px;
+    width: 790px;
+    background-color: rgb(3, 131, 95);
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.left-section h2 {
+    padding-top: 220px;
+    margin-left: 70px;
+    font-size: 35px;
+    animation: fadeln 2.5s ease-in-out;
+
+}
+
+@keyframes fadeln {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.left-section h3 {
+    margin-left: 70px;
+    font-size: 28px;
+    color: rgb(200, 200, 81);
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    margin-left: 240px;
+    background-color: antiquewhite;
+}
+
+.right-section {
+    width: 550px;
+    height: 650px;
+    margin-left: 0;
+}
+
+.right-section img {
+    float:left;
+    width: 550px;
+    height: 650px;
+
+}
+
+.About{
+    align-self: center;
+    height: 350px;
+    width:650px;
+    border:3px solid rgb(3, 131, 95);
+    border-radius: 25px;
+    margin-top:100px;
+    margin-left:400px;
+}
+
+.About h2{
+    text-decoration: underline;
+    color: rgb(3, 131, 95);
+    text-align: center;
+}
+
+.About p{
+    color:black;
+    margin-left: 50px;
+    margin-right:50px;
+    font-size: 20px;
+}
+
+.skills{
+    align-self: center;
+    height: 300px;
+    width:650px;
+    border:3px solid rgb(3, 131, 95);
+    border-radius: 25px;
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+.skills h2{
+    text-decoration: underline;
+    color:rgb(3, 131, 95);
+    text-align: center;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.skills ul li {
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(3, 131, 95);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+.project {
+    display: flex; 
+    justify-content: space-around;
+    margin-top: 100px;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    border:3px solid rgb(3, 131, 95);
+    border-radius: 25px;
+}
+
+.project h2{
+    text-decoration: underline;
+    color:rgb(3, 131, 95);
+    text-align: center;
+
+}
+
+.item {
+    margin-top:65px;
+    width: 300px; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.item h3 {
+    margin-top: 0; 
+    font-size: 1.2em;
+    color:rgb(3, 131, 95) ;
+}
+
+.item img {
+    max-width: 100%; 
+    display: block; 
+    border-radius: 8px; 
+}
+
+.resume{
+    height:400px;
+    width:300px;
+    border:3px solid rgb(3, 131, 95);
+    border-radius: 25px;
+    margin-top:100px;
+    margin-left:580px ;
+}
+
+.resume h3{
+    color:rgb(3, 131, 95);
+    font-size:20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.buttonn{
+    height:50px;
+    width:110px;
+    background-color: yellowgreen;
+    margin-left: 100px;
+    margin-top: 12px;
+
+
+}
+
+.resume img{
+    height: 200px;
+    width:150px;
+    margin-left:90px;
+}
+.footer {
+            padding: 1rem 2rem;
+            margin-top: 80px;
+            background-color:rgb(3, 131, 95);
+            color: #fff;
+            text-align: center;
+}
+
+.footer .footer-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+
+.footer .social-media {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+}
+
+.footer .social-media li {
+            margin: 0 1rem;
+}
+
+.footer .social-media li a {
+            color: #fff;
+            text-decoration: none;
+ }
+
+.footer img{
+            padding: 12px;
+}
+
+
+</style>
+<body>
+    <div class="header">
+        <div class="header-info">
+            <img src="portfolio assets\RISHIKA SHARMA.png" alt="error loading image">
+        </div>
+        <div class="header-navbar">
+            <ul>
+                <li><a href="#HOME">HOME</a></li>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#SKILLS">SKILLS</a></li>
+                <li><a href ="#PROJECTS">PROJECTS</a></li>
+                <li><a href="#RESUME">RESUME</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container" id="HOME">
+        <div class="left-section">
+            <h2>Hello, I'm Rishika Sharma</h2>
+            <h3>Front-end developer based in Indore. Passionate to work and giving new heights to the creativity of your websites.</h3>
+            <button class="btn">HIRE ME</button>
+        </div>
+        <div class="right-section">
+            <img src="portfolio assets/IMG_20240702_155201.jpg" alt="ERROR LOADING IMAGE">
+        </div>
+        
+    </div>
+
+    <div class="About" id="ABOUT">
+        <h2>ABOUT ME</h2>
+        <P>Hey there! I'm a student at Medicaps University, specializing in front-end development. I have a strong command of HTML, CSS, and JavaScript. I am eager to dive into the world of web development and gain valuable experience. I thrive on creating visually appealing and user-friendly designs that bring ideas to life on the web. I am open to opportunities that allow me to grow professionally and contribute to exciting projects. Let's connect and create something amazing together!"<P>
+    </div>
+    <div class="skills" id="SKILLS">
+        <h2>SKILLS</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>PYTHON</li> 
+            <li>MY SQL</li>
+        </ul>
+    </div>
+    <div class="project" id="PROJECTS">
+        <h2>PROJECTS</h2>
+        <div class="item">
+        <h3>Landing page of online library</h3>    
+        <img src ="portfolio assets/Screenshot 2024-07-03 150253.png"  alt="error loading image"> 
+        </div>
+        <div class ="item">
+            <h3>Clone of Netflix</h3>
+            <img src="portfolio assets/Screenshot (40).png" alt="error loading image">
+        </div>
+        <div class="item">
+        <h3>Hangman Game</h3>    
+        <img src="portfolio assets/Screenshot (38).png" alt="error loading image"> 
+        </div> 
+    </div>
+
+    <div class="resume" id="RESUME">
+        <h3>MY RESUME</h3> 
+        <img src="portfolio assets/WhatsApp Image 2024-07-03 at 18.42.29.jpeg" alt="ERROR LOADING IMAGE">
+        <a href="RISHIKA RESUME.pdf" download>
+            <button class="buttonn" id="download">DOWNLOAD</button>
+        </a>   
+    </div>
+
+    <footer class="footer" id="HIREME">
+        <div class="footer-info">
+            <div class="social-media">
+                <a href="https://www.instagram.com/_rishika24_" target="_blank">
+                <img src="portfolio assets/IMG-20240704-WA0001-removebg-preview.png" alt="instagram" height="40px" width="40px">    
+                </a>
+                <a href="https://www.linkedin.com/in/rishika-sharma-863b30259" target="blank">
+                <img src="portfolio assets/download (1).png" alt="Linkedin" height="40px" width="40px"></a>
+
+            </div>
+            <div class="text">
+                <p>Contact at: 8103899049</p>
+                <p>Email: rishikars183@gmail.com</p>
+                <p>&copy;  Rishika Sharma, 2024. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
